@@ -1,0 +1,21 @@
+FROM python:3.9
+
+RUN python -m venv env
+ENV PATH="env/Scripts/"
+
+COPY requirements.txt app/requirements.txt
+COPY .streamlit/ ./app/.streamlit/
+COPY ./reports/ ./app/reports/
+COPY ./static/ ./app/static/
+COPY ./pages/ ./app/pages/
+COPY ./db/ ./app/db/
+COPY .env ./app/.env
+COPY 🏠_Home.py /app/🏠_Home.py
+WORKDIR /app
+
+RUN pip install -r requirements.txt
+
+EXPOSE 8000
+
+ENTRYPOINT ["streamlit", "run"]
+CMD ["./🏠_Home.py"]

@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "Haven"
+version = "0.0.1"
+description = "Cybersecurity Suite"
+authors = ["Siddhesh Agarwal <siddhesh.agarwal@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = ">=3.8,<=4.0"
+emojicrypt = "1.0.2"
+hydralit-components = "^1.0.10"
+maigret = "^0.4.3"
+plotly = "5.10.0"
+polars = "^0.14.2"
+pynput = "1.7.6"
+streamlit = "1.11.1"
+sqlalchemy = "1.4.40"
+
+[tool.poetry.dev-dependencies]
+black = "^22.6.0"
+isort = "^5.10.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

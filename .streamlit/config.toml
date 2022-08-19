@@ -1,0 +1,30 @@
+[browser]
+gatherUsageStats = false
+
+[client]
+caching = true
+
+[global]
+disableWatchdogWarning = false
+showWarningOnDirectExecution = false
+dataFrameSerialization = "legacy"
+
+[runner]
+installTracer = false
+fastReruns = true
+magicEnabled = false
+
+[server]
+port = 8000
+enableCORS = true
+enableXsrfProtection = true
+enableWebsocketCompression = true
+maxUploadSize = 100
+maxMessageSize = 100
+
+[theme]
+primaryColor="#BD93F9"
+backgroundColor="#282A36"
+secondaryBackgroundColor="#44475A"
+textColor="#F8F8F2"
+font="sans serif"

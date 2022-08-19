@@ -1,0 +1,8 @@
+streamlit==1.11.1
+hydralit-components==1.0.10
+maigret==0.4.3
+polars==0.14.0
+pynput==1.7.6
+emojicrypt==1.0.2
+sqlalchemy==1.4.40
+plotly==5.10.0
