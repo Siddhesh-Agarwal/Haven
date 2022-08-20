@@ -26,8 +26,8 @@ Haven's projects are built to be Engaging and appealing to all students.
   uses a shifting algorithm key to encrypt and decrypt information.
 * Hash generator:
   uses hashing techniques like  SHA, ADLER and BLAKE. Its designed in a way that makes it easy to compare and contrast the different algorithms.
-* DDos simulator:
-  DDoS simulator is used to simulate a DDos Attack on a server and check the strength of the same. 
+* DoS simulator:
+  DoS simulator is used to simulate a DoS Attack on a server and check the strength of the same. 
 * Social scanner:
   Social Scanner inputs your username to find other websites where your username is being used.
 * Port scanner:

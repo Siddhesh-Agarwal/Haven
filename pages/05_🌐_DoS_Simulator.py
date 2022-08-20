@@ -5,7 +5,7 @@ from threading import Thread
 import streamlit as st
 
 st.set_page_config(
-    page_title="DDoS Simulator | Haven",
+    page_title="DoS Simulator | Haven",
     page_icon="🌐",
     layout="centered",
     initial_sidebar_state="expanded",
@@ -29,7 +29,7 @@ def attack():
             print(attack_num)
 
 
-st.title("DDoS Simulator")
+st.title("DoS Simulator")
 st.warning("This is for educational purposes only")
 target = st.text_input(label="Enter target", placeholder="target IP")
 cols = st.columns(2)
