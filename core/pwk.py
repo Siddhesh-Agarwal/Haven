@@ -93,3 +93,10 @@ def get_password(username: str, website: str = None):
     else:
         df = pd.read_csv(f"db/{username.lower()}.csv")
         return df[df["website"] == website].to_pandas()
+
+
+def generate_salt():
+    """Generate a salt for password encryption."""
+    return "".join(
+        choice(string.ascii_letters + string.digits + SPECIALS) for _ in range(16)
+    )

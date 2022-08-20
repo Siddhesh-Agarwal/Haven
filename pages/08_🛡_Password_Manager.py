@@ -1,8 +1,10 @@
 from hashlib import sha3_512
 import pandas as pd
+import os
 import streamlit as st
 from secrets import choice
-from core.pwk import check_username
+from core.pwk import check_username, generate_salt
+from dotenv import load_dotenv
 
 # from sqlalchemy import create_engine
 # from sqlalchemy.orm import scoped_session, sessionmaker
@@ -20,6 +22,7 @@ st.set_page_config(
 )
 
 st.title("Password Manager")
+load_dotenv()
 cols = st.columns(6)
 with cols[0]:
     sign_up = st.button("Sign up")
@@ -58,8 +61,16 @@ if sign_up:
         if st.form_submit_button("Register"):
             password = password
             df = pd.read_csv("./db/users.csv")
-            salt = 
-            df.append({""})
+            salt = generate_salt()
+            pepper = os.getenv("PEPPER")
+            password = password + pepper + salt
+            df.append(
+                {
+                    "username": username,
+                    "password": sha3_512(password.encode()).hexdigest(),
+                    "salt": salt,
+                }
+            )
 elif sign_in:
     with st.form("authentication"):
         username = st.text_input(
@@ -77,3 +88,22 @@ elif sign_in:
             type="password",
             key=21,
         )
+
+        if st.form_submit_button("Sign in"):
+            df = pd.read_csv("./db/users.csv")
+            salt = df.loc[df["username"] == username, "salt"].values[0]
+            pepper = os.getenv("PEPPER")
+            password = password + pepper + salt
+            if (
+                df.loc[df["username"] == username, "password"].values[0]
+                == sha3_512(password.encode()).hexdigest()
+            ):
+                st.success("You are signed in!")
+                USERNAME = username
+            else:
+                st.error("Invalid username or password!")
+                USERNAME = None
+
+if USERNAME is not None:
+    # password manager for user
+    pass

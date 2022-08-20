@@ -13,31 +13,6 @@ st.set_page_config(
     },
 )
 
-# st.image("./static/icon.png", use_column_width="always")
-
-
-st.markdown(open("./README.md").read())
-
-with st.expander("Image Steganography"):
-    pass
-
-with st.expander("Caesar Cipher System"):
-    pass
-
-with st.expander("DDoS Attacks"):
-    pass
-
-with st.expander("Keylogger"):
-    pass
-
-with st.expander("Hash generator"):
-    st_player("https://youtu.be/QbkHUs8pFMU")
-
-with st.expander("Social Scrapper"):
-    pass
-
-with st.expander("Port scanner"):
-    pass
-
-with st.expander("Password generator and password strength"):
-    pass
+st.image("./static/icon.png", use_column_width="always")
+st.markdown(open("./blogs/Intro.md").read())
+st.image("./static/roadmap.png", use_column_width="always")
