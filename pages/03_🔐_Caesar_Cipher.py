@@ -21,13 +21,13 @@ LENGTH = len(CHARS)
 
 @st.cache()
 def get_data():
-    return pd.read_csv("./static/words.csv")
+    return pd.read_csv("./data/words.csv").select("words")
 
 
 def makes_sense(text: str) -> bool:
     """tells whether the given string makes sense"""
+    data = get_data()
     for word in text.strip().split():
-        data = pd.read_csv("./data/words.csv")["words"]
         if all([word.isalpha(), word.lower() in data.values, len(word) > 2]):
             return True
     return False
