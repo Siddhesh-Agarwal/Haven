@@ -2,8 +2,8 @@ import streamlit as st
 from streamlit_discourse import st_discourse
 
 st.set_page_config(
-    page_title="Steganography | Haven",
-    page_icon="🆔",
+    page_title="Community | Haven",
+    page_icon="👤",
     layout="centered",
     initial_sidebar_state="expanded",
     menu_items={

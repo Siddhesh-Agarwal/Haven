@@ -5,7 +5,7 @@ from core.logging import logger
 
 st.set_page_config(
     page_title="Keylogger | Haven",
-    page_icon="./static/icon.png",
+    page_icon="⌨",
     layout="centered",
     initial_sidebar_state="expanded",
     menu_items={
