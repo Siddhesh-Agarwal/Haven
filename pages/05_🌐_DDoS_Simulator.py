@@ -30,7 +30,7 @@ def attack():
 
 
 st.title("DDoS Simulator")
-
+st.warning("This is for educational purposes only")
 target = st.text_input(label="Enter target", placeholder="target IP")
 cols = st.columns(2)
 with cols[0]:
