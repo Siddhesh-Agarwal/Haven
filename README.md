@@ -1,14 +1,60 @@
-# Haven
+# Haven -Anything but ordinary
 
-A cybersecurity suite that includes the following features:
+___
 
-* Image Steganography
-* Caesar Cipher System
-* DDoS Attacks
-* Keylogger
-* Hash generator
-* Social Scrapper
-* Port scanner
-* Password generator and password strength
+**Team Noobees**
+___
 
-![Haven](./static/icon.png)
+In recent times, Digital Vulnerability is becoming a huge threat to our privacy.An effort to spread awarness about the effects of Digital Vulnerability is our project HAVEN.
+
+Our Nation currently requires a robust cybersecurity strategy that safeguards government
+systems, business ecosystems and most importantly the citizens and this requires in depth knowledge on the concepts of cybersecurities.
+
+Haven enables students to develop their knowledge in cybersecurity with a hands on approach by building projects and simultaniously their portforlio.
+
+Haven's projects have an increasing level of difficulty, starting from the very basics to upto advanced concepts and problems that have real world applications.
+
+Haven's projects are built to be Engaging and appealing to all students.
+
+
+## Projects Available On Haven 
+* System informations:
+  gives information regarding the version of system that you are running and lets you know whether you update your system or not.
+* Emoji crypt:uses encryption and decryption using non alpha numeric characters.Presents itself as a fun way of entering into the world of cybersecurity.
+  
+* Caesar cipher:
+  uses a shifting algorithm key to encrypt and decrypt information.
+* Hash generator:
+  uses hashing techniques like  SHA, ADLER and BLAKE. Its designed in a way that makes it easy to compare and contrast the different algorithms.
+* DDos simulator:
+  DDoS simulator is used to simulate a DDos Attack on a server and check the strength of the same. 
+* Social scanner:
+  Social Scanner inputs your username to find other websites where your username is being used.
+* Port scanner:
+  Port scanner is used to check for all open ports to avoid port scanning scams and other similar vulnerabilities.
+* Password manager: 
+  Password manager helps collect and maintain randomly generated passwords that are complicated and hard to remember. 
+* Password Toolkit:
+  Password toolkit consists of password strength checker and password generator which help build a strong and secure password.
+* Keylogger : 
+  Keylogger collects keystrokes along with time stamp
+* Image steganography:
+  Encrypts data in files into images.
+
+
+## Marketing Stratagy 
+The web app is designed in such a way that the person can access the first two project content for free and following which the entire suite and single projects are  accessible to the user at a fixed cost.
+
+## Tech Stack
+* Python
+* Streamlit
+* Hydralic Component
+* hashlib
+* zlib
+* polars
+* pynput
+* emojicrypt
+* poetry
+* plotlib
+* logger
+* docker
