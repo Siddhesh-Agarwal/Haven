@@ -5,9 +5,9 @@ gatherUsageStats = false
 caching = true
 
 [global]
-disableWatchdogWarning = false
+disableWatchdogWarning = true
 showWarningOnDirectExecution = false
-dataFrameSerialization = "legacy"
+dataFrameSerialization = "arrow"
 
 [runner]
 installTracer = false
