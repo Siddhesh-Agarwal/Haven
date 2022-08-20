@@ -80,3 +80,6 @@ if st.button(BTN_TXT, key="submit-btn") and image:
             st.write(message)
         else:
             st.warning("Select an option")
+
+with st.expander("Read more..."):
+    st.markdown(open("blogs/steganography.md").read())

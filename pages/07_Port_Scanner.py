@@ -55,3 +55,6 @@ if st.button("Scan"):
             st.error("[ERROR]: Hostname Could Not Be Resolved!")
         except socket.error:
             st.error("[ERROR]: Server not responding!")
+
+with st.expander("Read more..."):
+    st.markdown(open("blogs/Port-Scanner.md").read())

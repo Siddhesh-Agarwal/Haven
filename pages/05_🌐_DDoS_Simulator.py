@@ -53,3 +53,6 @@ if st.button("Start"):
         for i in range(500):
             thread = Thread(target=attack)
             thread.start()
+
+with st.expander("Read more..."):
+    st.markdown(open("blogs/DDoS.md").read())

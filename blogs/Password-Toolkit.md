@@ -1,13 +1,11 @@
 # Password Toolkit
 
-![Password Toolkit](./static/Password%20Toolkit.png)
+![Password Toolkit](./blogs/static/Password%20Toolkit.png)
 The password toolkit consists of a Password Generator and a Password Strength meter.
 
 ## Password Generator
 
 > The password generator is useful for those who must constantly develop secure passwords to ensure authorized access to Programs. This generates a unique password with random numbers, symbols, and letters.
-
-[***In need of a Password Toolkit? Check out Haven's Password Toolkit***](http://localhost:8000/Password_Toolkit)
 
 ## Password Strength Meter
 

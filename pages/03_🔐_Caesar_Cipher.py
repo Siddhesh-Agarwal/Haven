@@ -81,7 +81,7 @@ with st.expander("Encrypt", expanded=True):
             label="Upload a file:", help="The file to encrypt.", key=13
         )
         if file is not None:
-            text = file.getvalue().decode("utf-16")
+            text = file.getvalue().decode("utf-8")
 
     # st.write(str(text))
     shift = st.number_input(
@@ -115,7 +115,7 @@ with st.expander("Decrypt"):
     else:
         file = st.file_uploader("Upload a file:", help="The file to encrypt.", key=23)
         if file is not None:
-            text = file.getvalue().decrypt("utf-16")
+            text = file.getvalue().decrypt("utf-8")
 
     shift = st.number_input(
         label="Enter a shift value:",
@@ -149,10 +149,13 @@ with st.expander("AI decryptor"):
             label="Upload a file:", help="The file to encrypt.", key=33
         )
         if file is not None:
-            text = file.getvalue().decrypt("utf-16")
+            text = file.getvalue().decrypt("utf-8")
 
     if st.button("AI decryptor"):
         if len(text.strip()) > 0:
             st.success(decryptor(text))
         else:
             st.error("No text to encrypt.")
+
+with st.expander("Read more..."):
+    st.write(open("blogs/Caesar.md").read())
