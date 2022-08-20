@@ -24,29 +24,39 @@ def get_data():
     return pd.read_csv("./static/words.csv")
 
 
-def makes_sense(text: str):
-    data = get_data()
+def makes_sense(text: str) -> bool:
+    """tells whether the given string makes sense"""
     for word in text.strip().split():
-        if all([word.isalpha(), word.lower() in data["words"], len(word) > 2]):
+        data = pd.read_csv("./data/words.csv")["words"]
+        if all([word.isalpha(), word.lower() in data.values, len(word) > 2]):
             return True
     return False
 
 
-@st.experimental_memo
 def decryptor(text: str):
+    """
+    Parameters
+    ----------
+    text : str
+        The text to be decrypted.
+    Returns
+    -------
+    str
+        The decrypted text.
+    """
     shift = 0
     while True:
         # Positive shift
         decrypted = ""
         for char in text:
-            decrypted += CHARS[(CHARS.find(char) + shift) % LENGTH]
+            decrypted += chr(ord(char) + shift)
         if makes_sense(decrypted):
             return decrypted
 
         # Negative shift
         decrypted = ""
         for char in text:
-            decrypted += CHARS[(CHARS.find(char) - shift) % LENGTH]
+            decrypted += chr(ord(char) - shift)
         if makes_sense(decrypted):
             return decrypted
 

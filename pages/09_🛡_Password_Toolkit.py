@@ -128,7 +128,7 @@ with st.expander("Password Strength Checker"):
             with col2:
                 theme_warn = theme_bad
                 theme_warn["icon"] = "fa fa-exclamation-triangle"
-                if password in pd.read_csv("./static/common.txt")["Passwords"]:
+                if password in pd.read_csv("./static/common.csv")["Passwords"]:
                     hc.info_card(
                         title="Common",
                         content="This password is commonly used.",

@@ -40,7 +40,7 @@ def new_password(
             allowed += string.digits
         if specials:
             allowed += SPECIALS
-        password = "".join(choice(allowed) for _ in range(length))
+        password = "".join([choice(allowed) for _ in range(length)])
         return password
     ValueError("Please allow at least 1 type of character.")
 
