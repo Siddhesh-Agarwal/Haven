@@ -1,6 +1,5 @@
 import polars as pd
 import streamlit as st
-from st_aggrid import AgGrid
 
 from core.logging import logger
 
@@ -24,3 +23,6 @@ if st.button("Start Logger"):
     st.subheader("Keystrokes Data")
     df = pd.read_csv("./logs/keylogs.csv")
     st.write(df.to_pandas())
+
+with st.expander("Read more..."):
+    st.markdown(open("blogs/Keylogger.md").read())

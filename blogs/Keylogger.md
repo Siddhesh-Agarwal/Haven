@@ -8,8 +8,6 @@ ______
 >
 > A key logging software program does not require physical access to the user's computer for installation.
 
-[***Click here to check out our Key Logger Project***](http://localhost:8000/Keylogger)
-
 ## How is made available to the user?
 
 > It can be purposefully downloaded by someone who wants to monitor activity on a particular computer, or it can be malware downloaded unwittingly and executed as part of a rootkit or Remote Administration Trojan (RAT).

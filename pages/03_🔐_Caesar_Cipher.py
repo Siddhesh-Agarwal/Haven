@@ -24,29 +24,39 @@ def get_data():
     return pd.read_csv("./static/words.csv")
 
 
-def makes_sense(text: str):
-    data = get_data()
+def makes_sense(text: str) -> bool:
+    """tells whether the given string makes sense"""
     for word in text.strip().split():
-        if all([word.isalpha(), word.lower() in data["words"], len(word) > 2]):
+        data = pd.read_csv("./data/words.csv")["words"]
+        if all([word.isalpha(), word.lower() in data.values, len(word) > 2]):
             return True
     return False
 
 
-@st.experimental_memo
 def decryptor(text: str):
+    """
+    Parameters
+    ----------
+    text : str
+        The text to be decrypted.
+    Returns
+    -------
+    str
+        The decrypted text.
+    """
     shift = 0
     while True:
         # Positive shift
         decrypted = ""
         for char in text:
-            decrypted += CHARS[(CHARS.find(char) + shift) % LENGTH]
+            decrypted += chr(ord(char) + shift)
         if makes_sense(decrypted):
             return decrypted
 
         # Negative shift
         decrypted = ""
         for char in text:
-            decrypted += CHARS[(CHARS.find(char) - shift) % LENGTH]
+            decrypted += chr(ord(char) - shift)
         if makes_sense(decrypted):
             return decrypted
 
@@ -81,7 +91,7 @@ with st.expander("Encrypt", expanded=True):
             label="Upload a file:", help="The file to encrypt.", key=13
         )
         if file is not None:
-            text = file.getvalue().decode("utf-16")
+            text = file.getvalue().decode("utf-8")
 
     # st.write(str(text))
     shift = st.number_input(
@@ -115,7 +125,7 @@ with st.expander("Decrypt"):
     else:
         file = st.file_uploader("Upload a file:", help="The file to encrypt.", key=23)
         if file is not None:
-            text = file.getvalue().decrypt("utf-16")
+            text = file.getvalue().decrypt("utf-8")
 
     shift = st.number_input(
         label="Enter a shift value:",
@@ -149,10 +159,13 @@ with st.expander("AI decryptor"):
             label="Upload a file:", help="The file to encrypt.", key=33
         )
         if file is not None:
-            text = file.getvalue().decrypt("utf-16")
+            text = file.getvalue().decrypt("utf-8")
 
     if st.button("AI decryptor"):
         if len(text.strip()) > 0:
             st.success(decryptor(text))
         else:
             st.error("No text to encrypt.")
+
+with st.expander("Read more..."):
+    st.write(open("blogs/Caesar.md").read())

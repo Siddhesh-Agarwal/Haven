@@ -17,5 +17,3 @@
 > This targets devices and protocols that connect the network to the internet.
 >
 > When a DoS attack takes place, the target experiences a sudden interruption in one or more services as the attack has flooded the resources with HTTP requests and traffic, denying access to legitimate users.
-
-[***Want to check how strong your servers are? Initiate a DoS attack on your servers now!***](http://localhost:8000/DoS_Simulator)
