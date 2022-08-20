@@ -1,6 +1,6 @@
 # DDOS ATTACK
 
-![DDOS Attack](./static/DDOS%20Attack.png)
+![DDOS Attack](./blogs/static/DDOS%20Attack.png)
 
 ## What is DDoS Attack?
 
@@ -17,5 +17,3 @@
 > This targets devices and protocols that connect the network to the internet.
 >
 > When a DDoS attack takes place, the target experiences a sudden interruption in one or more services as the attack has flooded the resources with HTTP requests and traffic, denying access to legitimate users.
-
-[***Want to check how strong your servers are? Initiate a DDoS attack on your servers now!***](http://localhost:8000/DDoS_Simulator)

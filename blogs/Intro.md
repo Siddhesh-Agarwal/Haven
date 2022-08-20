@@ -8,5 +8,3 @@ Haven is an place to learn cyber security by building relevant projects complete
 Built from the ground up by students Haven ensures that the project from the very basics of cybersecurity.
 
 We aim to build a community of students that are well versed in complex cyber security concepts.
-
-[***To start your first project with Haven an "System Information Generator" click here***](http://localhost:8000/System_Information)

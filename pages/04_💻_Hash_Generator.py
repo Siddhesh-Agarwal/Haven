@@ -68,3 +68,6 @@ with col2:
 
     with st.expander("CRC 32"):
         st.info(zlib.crc32(text.encode()))
+
+with st.expander("Read more..."):
+    st.markdown(open("blogs/Hash.md").read())

@@ -1,6 +1,6 @@
 # Hash Generation
 
-![hash](./static/Hash.png)
+![hash](./blogs/static/Hash.png)
 
 ## What is Hashing ?
 
@@ -17,7 +17,3 @@
 > Hashing uses math algorithms like Adler, CRC, SHA, ext. to compress the data to a fixed size.
 >
 > This compressed data is irreversible (Data once hashed can not be unhashed) and unique (No two files in the world are hashed exactly the same - Even if the files contents are exactly the same)
-
-## Want to see Hash Generation in real time?
-
-[***Use Haven's Hash Generator for all your Hashing needs!***](http://localhost:8000/Hash_Generator)
