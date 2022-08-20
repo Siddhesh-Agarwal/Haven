@@ -14,5 +14,5 @@ st.set_page_config(
 )
 
 st.image("./static/icon.png", use_column_width="always")
-st.markdown(open("./blogs/Intro.md").read())
+st.markdown(open("./README.md").read())
 st.image("./static/roadmap.png", use_column_width="always")
