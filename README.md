@@ -32,17 +32,20 @@ ___________________________________________________
 
 ___________________________________________________
 
-## Tech Stack
+## Execution
 
-- Python
-- Streamlit
-- Hydralic Component
-- Hashlib
-- Zlib
-- Polars
-- Pynput
-- Emojicrypt
-- Poetry
-- Plotlib
-- Logger
-- Docker
+Create a virtual environment:
+
+    $ python -m venv env
+    
+Activate virtual environment using:
+    
+    $ env/Scripts/activate
+
+install dependencies:
+
+    $ pip install -r requirements.txt
+    
+Run streamlit app:
+    
+    $ streamlit run ??_Home.py
