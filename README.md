@@ -32,22 +32,17 @@ ___________________________________________________
 
 ___________________________________________________
 
-## Marketing Strategy
-
-The web app is designed in such a way that the person can access the first two project content for free and following which the entire suite and single projects are  accessible to the user at a fixed cost.
-___________________________________________________
-
 ## Tech Stack
 
 - Python
 - Streamlit
 - Hydralic Component
-- hashlib
-- zlib
-- polars
-- pynput
-- emojicrypt
-- poetry
-- plotlib
-- logger
-- docker
+- Hashlib
+- Zlib
+- Polars
+- Pynput
+- Emojicrypt
+- Poetry
+- Plotlib
+- Logger
+- Docker
