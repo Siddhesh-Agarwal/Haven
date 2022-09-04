@@ -4,7 +4,7 @@ import streamlit as st
 from core.logging import logger
 
 st.set_page_config(
-    page_title="Keylogger | Haven",
+    page_title="Keylogger | Secure Spark",
     page_icon="⌨",
     layout="centered",
     initial_sidebar_state="expanded",

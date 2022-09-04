@@ -8,7 +8,7 @@
 >
 > But sometimes these ports are not closed and leave you vulnerable to port scanning attacks.
 >
-[**Haven's port scanner allows you to unclosed ports and saves you from cyber criminals.**](http://localhost:8000/Port_Scanner)
+[**Secure Spark's port scanner allows you to unclosed ports and saves you from cyber criminals.**](http://localhost:8000/Port_Scanner)
 
 ## Why should you use a port scanner?
 

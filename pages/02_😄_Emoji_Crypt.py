@@ -2,7 +2,7 @@ import streamlit as st
 from emojicrypt import EmojiCrypt
 
 st.set_page_config(
-    page_title="Emoji Crypt | Haven",
+    page_title="Emoji Crypt | Secure Spark",
     page_icon="😄",
     layout="centered",
     initial_sidebar_state="expanded",

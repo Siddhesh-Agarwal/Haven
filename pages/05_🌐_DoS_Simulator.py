@@ -5,7 +5,7 @@ from threading import Thread
 import streamlit as st
 
 st.set_page_config(
-    page_title="DoS Simulator | Haven",
+    page_title="DoS Simulator | Secure Spark",
     page_icon="🌐",
     layout="centered",
     initial_sidebar_state="expanded",

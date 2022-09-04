@@ -1,10 +1,9 @@
 import streamlit as st
-from streamlit_player import st_player
 
 st.set_page_config(
-    page_title="Haven",
-    page_icon="./static/icon.png",
-    layout="centered",
+    page_title="Secure Spark",
+    page_icon="./static/logo.png",
+    layout="wide",
     initial_sidebar_state="expanded",
     menu_items={
         "Get Help": None,
@@ -13,6 +12,6 @@ st.set_page_config(
     },
 )
 
-st.image("./static/icon.png", use_column_width="always")
+# st.image("./static/logo.png", use_column_width="always")
 st.markdown(open("./README.md").read())
 st.image("./static/roadmap.png", use_column_width="always")

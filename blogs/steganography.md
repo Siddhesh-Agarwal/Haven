@@ -9,7 +9,7 @@ In the world of cybersecurity, steganography is the technique of hiding secret d
 
 > Steganography is the a process of embedding a secret piece of text within a text, picture, or audio. The message could be a message or script within a document file or a picture file. A form of covert communication, the main purpose of steganography is concealing and deceiving.
 
-[**Haven's Steganography tool uses images to conceal images and files. Click here to see.**](http://localhost:8000/Steganography)
+[**Secure Spark's Steganography tool uses images to conceal images and files. Click here to see.**](http://localhost:8000/Steganography)
 
 ___
 
@@ -86,9 +86,9 @@ ___
 
 ____
 
-## Steganography in HAVEN
+## Steganography in Secure Spark
 
-> Generally, there is no encryption in Steganography but in HAVEN we're going to use **2-way asymmetric encryption** to encrypt the plain text. Thereby ensuring in the case of third party interception there is no compromise in security
+> Generally, there is no encryption in Steganography but in Secure Spark we're going to use **2-way asymmetric encryption** to encrypt the plain text. Thereby ensuring in the case of third party interception there is no compromise in security
 
 ![Image Steganography](/static/Blogs%20/images/Image%20Steganography.jpeg)
 

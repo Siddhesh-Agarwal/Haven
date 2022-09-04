@@ -1,10 +1,13 @@
 import socket
 
-import polars as pd
+import pandas as pd
 import streamlit as st
+from st_aggrid import AgGrid
+from st_aggrid.shared import JsCode
+from st_aggrid.grid_options_builder import GridOptionsBuilder
 
 st.set_page_config(
-    page_title="Port Scanner | Haven",
+    page_title="Port Scanner | Secure Spark",
     page_icon="🛡️",
     layout="centered",
     initial_sidebar_state="expanded",
@@ -15,18 +18,35 @@ st.set_page_config(
     },
 )
 
+cellsytle_jscode = JsCode(
+    """
+function(params) {
+    if (params.value.includes('closed')) {
+        return {
+            'color': 'white',
+            'backgroundColor': 'green'
+        }
+    } else if (params.value.includes('open')) {
+        return {
+            'color': 'white',
+            'backgroundColor': 'red'
+        }
+    }
+};
+"""
+)
 
-@st.experimental_memo
-def scan(from_port: int, to_port: int):
+
+def scan(from_port: int, to_port: int) -> pd.DataFrame:
     df = pd.DataFrame(columns=["port", "status"])
     for port in range(from_port, to_port + 1):
         with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
             socket.setdefaulttimeout(1)
             result = s.connect_ex((target, port))
             if result == 0:
-                df.append(
-                    {"port": port, "status": "open"}, ignore_index=True, inplace=True
-                )
+                df = df.append({"port": port, "status": "open"}, ignore_index=True)
+            else:
+                df = df.append({"port": port, "status": "closed"}, ignore_index=True)
     return df
 
 
@@ -46,15 +66,31 @@ with col[2]:
     )
 
 if st.button("Scan"):
-    with st.spinner("Scanning host..."):
-        try:
-            scan(from_port, to_port)
-        except KeyboardInterrupt:
-            st.error("[ERROR]: Exiting Program!")
-        except socket.gaierror:
-            st.error("[ERROR]: Hostname Could Not Be Resolved!")
-        except socket.error:
-            st.error("[ERROR]: Server not responding!")
+    if hostname.strip() != "":
+        with st.spinner("Scanning host..."):
+            try:
+                df = scan(from_port, to_port)
+                gb = GridOptionsBuilder.from_dataframe(df)
+                gb.configure_pagination()
+                gb.configure_side_bar()
+                gb.configure_column("status", cellStyle=cellsytle_jscode)
+                gridOptions = gb.build()
+                AgGrid(
+                    data=df,
+                    gridOptions=gridOptions,
+                    fit_columns_on_grid_load=True,
+                    theme="dark",
+                    enable_enterprise_modules=True,
+                    allow_unsafe_jscode=True,
+                )
+            except KeyboardInterrupt:
+                st.error(r"[ERROR]: Exiting Program!")
+            except socket.gaierror:
+                st.error(r"[ERROR]: Hostname Could Not Be Resolved!")
+            except socket.error:
+                st.error(r"[ERROR]: Server not responding!")
+    else:
+        st.error(r"[ERROR]: Hostname not given")
 
 with st.expander("Read more..."):
     st.markdown(open("blogs/Port-Scanner.md").read())

@@ -4,7 +4,7 @@ import zlib
 import streamlit as st
 
 st.set_page_config(
-    page_title="Hash Generator | Haven",
+    page_title="Hash Generator | Secure Spark",
     page_icon="💻",
     layout="centered",
     initial_sidebar_state="expanded",

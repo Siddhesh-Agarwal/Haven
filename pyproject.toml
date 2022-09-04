@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "Haven"
+name = "Secure Spark"
 version = "0.0.1"
 description = "Cybersecurity Suite"
 authors = ["Siddhesh Agarwal <siddhesh.agarwal@gmail.com>"]
@@ -14,7 +14,6 @@ plotly = "5.10.0"
 polars = "^0.14.2"
 pynput = "1.7.6"
 streamlit = "1.11.1"
-sqlalchemy = "1.4.40"
 
 [tool.poetry.dev-dependencies]
 black = "^22.6.0"

@@ -1,12 +1,12 @@
 import hydralit_components as hc
-import pandas as pd
+import polars as pd
 import plotly.graph_objects as go
 import streamlit as st
 
 from core.pwk import new_password, password_entropy
 
 st.set_page_config(
-    page_title="Password toolkit | Haven",
+    page_title="Password toolkit | Secure Spark",
     page_icon="🛡️",
     layout="centered",
     initial_sidebar_state="expanded",
@@ -91,7 +91,6 @@ with st.expander("Password Strength Checker"):
                         content="This passwords would take get cracked INSTANTLY.",
                         sentiment="bad",
                         theme_override=theme_bad,
-                        bar_value=int(E),
                     )
                 elif E < 40:
                     hc.info_card(
@@ -99,15 +98,13 @@ with st.expander("Password Strength Checker"):
                         content="This passwords would take < 1 MINUTE to crack.",
                         sentiment="bad",
                         theme_override=theme_bad,
-                        bar_value=int(E),
                     )
                 elif E < 70:
                     hc.info_card(
                         title="Neutral.",
-                        content="This passwords would take hours to crack.",
+                        content="This passwords would take HOURS to crack.",
                         sentiment="neutral",
                         theme_override=theme_neutral,
-                        bar_value=int(E),
                     )
                 elif E < 90:
                     hc.info_card(
@@ -115,7 +112,6 @@ with st.expander("Password Strength Checker"):
                         content="This passwords would take decades to crack.",
                         sentiment="good",
                         theme_override=theme_good,
-                        bar_value=int(E),
                     )
                 else:
                     hc.info_card(
@@ -123,12 +119,13 @@ with st.expander("Password Strength Checker"):
                         content="This passwords would take millenniums to crack.",
                         sentiment="good",
                         theme_override=theme_good,
-                        bar_value=int(E),
                     )
             with col2:
                 theme_warn = theme_bad
                 theme_warn["icon"] = "fa fa-exclamation-triangle"
-                if password in pd.read_csv("./static/common.csv")["Passwords"]:
+                if password in pd.read_csv("./static/common.csv").get_column(
+                    "Passwords"
+                ):
                     hc.info_card(
                         title="Common",
                         content="This password is commonly used.",

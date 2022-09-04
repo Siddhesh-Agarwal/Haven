@@ -4,7 +4,7 @@ import streamlit as st
 from core.caesar import decrypt, encrypt
 
 st.set_page_config(
-    page_title="Caesar Cipher | Haven",
+    page_title="Caesar Cipher | Secure Spark",
     page_icon="🔐",
     layout="centered",
     initial_sidebar_state="expanded",
