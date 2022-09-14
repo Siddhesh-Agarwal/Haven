@@ -67,4 +67,4 @@ Steganography is more an art than a science. It involves using careful technique
 
 ## Steganography in Secure Spark
 
-Generally, there is no encryption in Steganography but in Secure Spark we're going to use **2-way asymmetric encryption** to encrypt the plain text. Thereby ensuring in the case of third party interception there is no compromise in security
+Generally, there is no encryption in Steganography but in Secure Spark we're going to use **2-way asymmetric encryption** to encrypt the plain text. Thereby ensuring in the case of third-party interception there is no compromise in security
