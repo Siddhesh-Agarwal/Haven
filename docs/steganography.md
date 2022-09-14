@@ -4,13 +4,9 @@
 
 Steganography is the a process of embedding a secret piece of text within a text, picture, or audio. The message could be a message or script within a document file or a picture file. A form of covert communication, the main purpose of steganography is concealing and deceiving.
 
-___
-
 ## How does it work?
 
 The working of Steganography is quite simple. It works by replacing some parts of useless or unused data in usual computer files with bits of invisible and different information.
-
-___
 
 ## Types of Steganography
 
@@ -44,12 +40,10 @@ In this, a video file will be embedded with supplementary data that will hide th
 
 ### Steganography in Documents
 
->This involves focusing on altering the characteristics of documents. Most people can read documents and therefore there are several ways in which this can be achieved. A few ways this is done are:
+This involves focusing on altering the characteristics of documents. Most people can read documents and therefore there are several ways in which this can be achieved. A few ways this is done are:
 
 - Hiding information in plain text by adding white space and tabs to the end of the lines of documents.
 - The use of background color and font is another widely used technique for steganography. It is widely used in Microsoft Word documents.
-
-___
 
 ## Techniques
 
@@ -70,8 +64,6 @@ Steganography is more an art than a science. It involves using careful technique
 - Playing an audio track backward to reveal a hidden message.
 - Encrypting a message or image within a photo through the addition of noise or sound.
 - Hiding information with the file header or metadata.
-
-____
 
 ## Steganography in Secure Spark
 
