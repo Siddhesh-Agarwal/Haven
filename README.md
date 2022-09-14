@@ -1,6 +1,7 @@
 # Secure Spark
 
-Anything but ordinary
+DevToys but for cybersecurity
+
 ___________________________________________________
 
 ## Services available on Secure Spark
