@@ -1,6 +1,6 @@
 # DoS ATTACK
 
-![DoS Attack](./static/DoS%20Attack.png)
+![DoS Attack](https://github.com/Siddhesh-Agarwal/Secure-Spark/blob/57e724be7dcdc0db9cc0973275b123551a851afc/docs/static/DDOS%20Attack.png)
 
 ## What is DoS Attack?
 
