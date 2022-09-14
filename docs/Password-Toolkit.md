@@ -1,6 +1,6 @@
 # Password Toolkit
 
-![Password Toolkit](./blogs/static/Password%20Toolkit.png)
+![Password Toolkit](./docs/static/Password%20Toolkit.png)
 The password toolkit consists of a Password Generator and a Password Strength meter.
 
 ## Password Generator

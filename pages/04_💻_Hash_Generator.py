@@ -70,4 +70,4 @@ with col2:
         st.info(zlib.crc32(text.encode()))
 
 with st.expander("Read more..."):
-    st.markdown(open("blogs/Hash.md").read())
+    st.markdown(open("docs/Hash.md").read())

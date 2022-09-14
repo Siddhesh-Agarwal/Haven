@@ -170,4 +170,4 @@ with st.expander("Password Strength Checker"):
             st.plotly_chart(fig)
 
 with st.expander("Read more..."):
-    st.markdown(open("blogs/Password-Toolkit.md").read())
+    st.markdown(open("docs/Password-Toolkit.md").read())

@@ -168,4 +168,4 @@ with st.expander("AI decryptor"):
             st.error("No text to encrypt.")
 
 with st.expander("Read more..."):
-    st.write(open("blogs/Caesar.md").read())
+    st.write(open("docs/Caesar.md").read())

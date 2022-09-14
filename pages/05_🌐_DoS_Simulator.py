@@ -55,4 +55,4 @@ if st.button("Start"):
             thread.start()
 
 with st.expander("Read more..."):
-    st.markdown(open("blogs/DDoS.md").read())
+    st.markdown(open("docs/DDoS.md").read())

@@ -93,4 +93,4 @@ if st.button("Scan"):
         st.error(r"[ERROR]: Hostname not given")
 
 with st.expander("Read more..."):
-    st.markdown(open("blogs/Port-Scanner.md").read())
+    st.markdown(open("docs/Port-Scanner.md").read())

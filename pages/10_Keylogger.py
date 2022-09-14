@@ -25,4 +25,4 @@ if st.button("Start Logger"):
     st.write(df.to_pandas())
 
 with st.expander("Read more..."):
-    st.markdown(open("blogs/Keylogger.md").read())
+    st.markdown(open("docs/Keylogger.md").read())

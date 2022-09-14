@@ -90,7 +90,7 @@ ____
 
 > Generally, there is no encryption in Steganography but in Secure Spark we're going to use **2-way asymmetric encryption** to encrypt the plain text. Thereby ensuring in the case of third party interception there is no compromise in security
 
-![Image Steganography](/static/Blogs%20/images/Image%20Steganography.jpeg)
+![Image Steganography](/static/docs%20/images/Image%20Steganography.jpeg)
 
 _____
 

@@ -82,4 +82,4 @@ if st.button(BTN_TXT, key="submit-btn") and image:
             st.warning("Select an option")
 
 with st.expander("Read more..."):
-    st.markdown(open("blogs/steganography.md").read())
+    st.markdown(open("docs/steganography.md").read())

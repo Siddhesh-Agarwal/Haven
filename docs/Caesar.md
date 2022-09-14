@@ -1,6 +1,6 @@
 # Caesar Cipher
 
-![Caesar Cipher](./blogs/static/Caesar.png)
+![Caesar Cipher](./docs/static/Caesar.png)
 
 > In this article, we will learn about a simple substitution cipher, the Caesar cipher.
 >

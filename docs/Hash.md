@@ -1,6 +1,6 @@
 # Hash Generation
 
-![hash](./blogs/static/Hash.png)
+![hash](./docs/static/Hash.png)
 
 ## What is Hashing ?
 
