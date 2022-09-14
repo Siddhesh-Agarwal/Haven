@@ -1,5 +1,5 @@
 import streamlit as st
-from emojicrypt import EmojiCrypt
+from cryptmoji import Cryptmoji
 
 st.set_page_config(
     page_title="Emoji Crypt | Secure Spark",
@@ -20,8 +20,8 @@ with st.expander("Encrypt", expanded=True):
     keyword = st.text_input("Keyword", value="random_string", key=11)
     if st.button("Encrypt"):
         if keyword.strip() != "" and text.strip() != "":
-            EC = EmojiCrypt(keyword)
-            st.write(EC.encrypt_vc(inpt=text))
+            EC = Cryptmoji(text, keyword)
+            st.write(EC.encrypt())
         else:
             st.error("Bruh, just fill both of them.")
 
@@ -30,7 +30,7 @@ with st.expander("Decrypt", expanded=False):
     keyword = st.text_input("Keyword", value="random_string", key=21)
     if st.button("Decrypt"):
         if keyword.strip() != "" and text.strip() != "":
-            EC = EmojiCrypt(keyword)
-            st.write(EC.decrypt_vc(inpt=text))
+            EC = Cryptmoji(text, keyword)
+            st.write(EC.decrypt())
         else:
             st.error("Bruh, just fill both of them.")
