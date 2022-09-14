@@ -16,6 +16,10 @@ Decryption is performed similarly,
 
 $$ D_{n}(x)=(x-n)\mod {26} $$
 
-## Limitation of the Caesar cipher
+## Limitation of Traditional Caesar cipher
 
 The English language has 26 alphabets. Therefore, for a plaintext letter, there can be only 25 different possible cipher text letters. Obviously, we must not consider that cipher text letter which is identical to the plaintext letter. The Caesar cipher, therefore, is evidently quite limited in terms of the encryption capabilities that it can offer.
+
+## How we solve it?
+
+- expanded the above to special characters, numbers, uppercase and lower case characters
