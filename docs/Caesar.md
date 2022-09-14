@@ -1,6 +1,6 @@
 # Caesar Cipher
 
-![Caesar Cipher](./docs/static/Caesar.png)
+![Caesar Cipher](https://github.com/Siddhesh-Agarwal/Secure-Spark/blob/6d51c571923ddcbaa12a13ac6b404a74e0f9e7c0/docs/static/Caesar.png)
 
 > In this article, we will learn about a simple substitution cipher, the Caesar cipher.
 >
