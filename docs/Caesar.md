@@ -1,14 +1,10 @@
 # Caesar Cipher
 
-![Caesar Cipher](https://github.com/Siddhesh-Agarwal/Secure-Spark/blob/6d51c571923ddcbaa12a13ac6b404a74e0f9e7c0/docs/static/Caesar.png)
-
-> In this article, we will learn about a simple substitution cipher, the Caesar cipher.
->
-> The Caesar cipher, also known as a _shift cipher_, is credited to Julius Caesar, and thus the name "Caesar cipher".
+In this article, we will learn about a simple substitution cipher, the Caesar cipher. The Caesar cipher, also known as a _shift cipher_, is credited to Julius Caesar, and thus the name _"Caesar cipher"_
 
 ## What is Caesar Cipher?
 
-> The Caesar cipher is a simple encryption scheme that is used to obscure the meaning of a message by shifting each letter comprising the message a few places in the alphabet
+> The Caesar cipher is a simple encryption scheme that is used to obscure the meaning of a message by shifting each letter comprising the message a few places in the alphabet.
 >
 > The Caesar cipher belongs to a subset of encryption schemes called substitution ciphers.
 
@@ -18,19 +14,19 @@
 
 ## Caesar cipher Encryption Algorithm
 
->The Caesar cipher encryption algorithm encrypts/converts a plaintext message m into a cipher text message c.
->
-> In order to encrypt a plaintext message m using the Caesar cipher, each letter constituting the plaintext message m must be moved the same number of places, as determined by the key.
->
-> The Caesar cipher encryption algorithm lays down the set of instructions to help achieve the plaintext message encryption process to produce a cipher text message.
+The Caesar cipher encryption algorithm encrypts/converts a plaintext message $m$ into a cipher text message $c$.
+
+In order to encrypt a plaintext message $m$ using the Caesar cipher, each letter constituting the plaintext message $m$ must be moved the same number of places, as determined by the key.
+
+The Caesar cipher encryption algorithm lays down the set of instructions to help achieve the plaintext message encryption process to produce a cipher text message.
 
 ## Caesar cipher Decryption Algorithm
 
-> So, by now, we have the Caesar cipher key generation and encryption algorithms and therefore, the only thing that is missing is the Caesar cipher decryption algorithm. The decryption algorithm will take the cipher text message c and decrypt/convert that back into the plaintext message m. The decryption algorithm simply undoes the operations performed by the encryption algorithm.
+So, by now, we have the Caesar cipher key generation and encryption algorithms and therefore, the only thing that is missing is the Caesar cipher decryption algorithm. The decryption algorithm will take the cipher text message c and decrypt/convert that back into the plaintext message m. The decryption algorithm simply undoes the operations performed by the encryption algorithm.
 
 ## Fun Fact
 
-> In the 20th century, the Caesar cipher was used many a times by lovers in order to send romantic messages in the public section of The Times newspaper. Now, that's what I call "Cryptic ROMANCE"!!!
+> In the 20th century, the Caesar cipher was used many a times by lovers in order to send romantic messages in the public section of The Times newspaper. Now, that's what I call "Cryptic ROMANCE"!
 
 ## Limitation of the Caesar cipher
 
