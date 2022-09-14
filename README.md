@@ -6,7 +6,7 @@ ___________________________________________________
 ## Services available on Secure Spark
 
 - **System Information**: gives information regarding the version of system that you are running and lets you know whether you update your system or not.
-- **Emoji Crypt**: uses encryption and decryption using non alpha numeric characters.Presents itself as a fun way of entering into the world of cybersecurity.
+- **Emoji Crypt**: performs encryption and decryption using emojis. Uses [Cryptmoji](https://pypi.org/project/cryptmoji/), a library developed by [Siddhesh Agarwal](https://github.com/Siddhesh-Agarwal).
 - **Caesar cipher**: uses a shifting algorithm key to encrypt and decrypt information.
 - **Hash generator**: uses hashing techniques like  SHA, ADLER and BLAKE. Its designed in a way that makes it easy to compare and contrast the different algorithms.
 - **DoS simulator**: DoS simulator is used to simulate a DoS Attack on a server and check the strength of the same.
