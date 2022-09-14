@@ -1,6 +1,6 @@
 # Secure Spark
 
-Anything but ordinary
+DevToys but for cybersecurity
 
 ___________________________________________________
 
