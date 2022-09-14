@@ -35,6 +35,14 @@ ___________________________________________________
 
 ___________________________________________________
 
+## Download
+
+clone the repo:
+
+    $ git clone https://github.com/Siddhesh-Agarwal/Secure-Spark.git
+
+___________________________________________________
+
 ## Execution
 
 Create a virtual environment:
