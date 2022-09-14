@@ -1,6 +1,6 @@
 # Hash Generation
 
-![hash](./docs/static/Hash.png)
+![hash](https://github.com/Siddhesh-Agarwal/Secure-Spark/blob/e702c66312df4a030ec4ecaa9aae54dbbd1bcf86/docs/static/Hash.png)
 
 ## What is Hashing ?
 
