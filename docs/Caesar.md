@@ -1,28 +1,20 @@
 # Caesar Cipher
 
-In this article, we will learn about a simple substitution cipher, the Caesar cipher. The Caesar cipher, also known as a _shift cipher_, is credited to Julius Caesar, and thus the name _"Caesar cipher"_
-
 ## What is Caesar Cipher?
 
-The Caesar cipher is a simple encryption scheme that is used to obscure the meaning of a message by shifting each letter comprising the message a few places in the alphabet.
+It is a type of substitution cipher in which each letter in the plaintext is replaced by a letter some fixed number of positions down the alphabet. For example, with a left shift of 3, D would be replaced by A, E would become B, and so on. 
 
-The Caesar cipher belongs to a subset of encryption schemes called substitution ciphers.
+The method is named after Julius Caesar.
 
-## Caesar cipher Key Generation Algorithm
+## Encryption and Decryption Algorithms
 
-The key generation algorithm simply tells us how to choose the key for the Caesar cipher encryption scheme. The key in a Caesar cipher is simply the number of places each letter constituting the message should be moved.
+The encryption can also be represented using modular arithmetic by first transforming the letters into numbers, according to the scheme, A → 0, B → 1, ..., Z → 25. Encryption of a letter $x$ by a shift $n$ can be described mathematically as,
 
-## Caesar cipher Encryption Algorithm
+$$ E_{n}(x)=(x+n)\mod {26} $$
 
-The Caesar cipher encryption algorithm encrypts/converts a plaintext message $m$ into a cipher text message $c$.
+Decryption is performed similarly,
 
-In order to encrypt a plaintext message $m$ using the Caesar cipher, each letter constituting the plaintext message $m$ must be moved the same number of places, as determined by the key.
-
-The Caesar cipher encryption algorithm lays down the set of instructions to help achieve the plaintext message encryption process to produce a cipher text message.
-
-## Caesar Cipher Decryption Algorithm
-
-So, by now, we have the Caesar cipher key generation and encryption algorithms and therefore, the only thing that is missing is the Caesar cipher decryption algorithm. The decryption algorithm will take the cipher text message c and decrypt/convert that back into the plaintext message m. The decryption algorithm simply undoes the operations performed by the encryption algorithm.
+$$ D_{n}(x)=(x-n)\mod {26} $$
 
 ## Limitation of the Caesar cipher
 
