@@ -1,21 +1,14 @@
 # Steganography
 
----
-![Steganography](Steganography.png)
-
-In the world of cybersecurity, steganography is the technique of hiding secret data within a non-secret, ordinary file or message to avoid being detected. It will be decoded only at the destination.
-
 ## What is Steganography?
 
-> Steganography is the a process of embedding a secret piece of text within a text, picture, or audio. The message could be a message or script within a document file or a picture file. A form of covert communication, the main purpose of steganography is concealing and deceiving.
-
-[**Secure Spark's Steganography tool uses images to conceal images and files. Click here to see.**](http://localhost:8000/Steganography)
+Steganography is the a process of embedding a secret piece of text within a text, picture, or audio. The message could be a message or script within a document file or a picture file. A form of covert communication, the main purpose of steganography is concealing and deceiving.
 
 ___
 
 ## How does it work?
 
->The working of Steganography is quite simple. It works by replacing some parts of useless or unused data in usual computer files with bits of invisible and different information.
+The working of Steganography is quite simple. It works by replacing some parts of useless or unused data in usual computer files with bits of invisible and different information.
 
 ___
 
@@ -23,7 +16,7 @@ ___
 
 ### Steganography in Images
 
-> Digital images are used widely and since they are available in various formats the algorithm used differs completely. Some common kinds are:
+Digital images are used widely and since they are available in various formats the algorithm used differs completely. Some common kinds are:
 
 - Least significant bit insertion.
 - Masking and filtering.
@@ -34,7 +27,7 @@ ___
 
 ### Steganography in Audio
 
->Implanting a secret message in audio is most difficult as the human brain has a wide range of auditory capacity. A few methods used are:
+Implanting a secret message in audio is most difficult as the human brain has a wide range of auditory capacity. A few methods used are:
 
 - LSB coding.
 - Parity coding.
@@ -44,7 +37,7 @@ ___
 
 ### Steganography in Video
 
->In this, a video file will be embedded with supplementary data that will hide the secret message. Some widely known approaches are
+In this, a video file will be embedded with supplementary data that will hide the secret message. Some widely known approaches are
 
 - Least Significant Bit Insertion.
 - Real-time Video Steganography.
@@ -60,23 +53,17 @@ ___
 
 ## Techniques
 
-> Steganography techniques used help in concealing the message to the best possible extent to ensure that it is revealed only at the destination. Some of the techniques used are:
+Steganography techniques used help in concealing the message to the best possible extent to ensure that it is revealed only at the destination. Some of the techniques used are:
 
-### Least Significant bit
+**Least Significant bit**: The attacker identifies the least significant bits of information in the carrier file and substitutes it with the secret message, in most cases, malicious code.
 
-> The attacker identifies the least significant bits of information in the carrier file and substitutes it with the secret message, in most cases, malicious code.
+**Palette Based Technique**: This uses digital images as malware carriers where attackers first encrypt the message, hide it in a wide palette of the cover image.
 
-### Palette Based Technique
-
-> This uses digital images as malware carriers where attackers first encrypt the message, hide it in a wide palette of the cover image.
-
-### Secure Cover Selection
-
-> A very complex technique, cyber criminals have to compare blocks of the carrier image to specific blocks of specific malware. It involves finding the right match to carry the malware.
+**Secure Cover Selection**: A very complex technique, cyber criminals have to compare blocks of the carrier image to specific blocks of specific malware. It involves finding the right match to carry the malware.
 
 ## Examples
 
->Steganography is more an art than a science. It involves using careful techniques to hide the message and execute it. There is no limit to the ways steganography can be used with such a wide range of technology available today. A few examples are:
+Steganography is more an art than a science. It involves using careful techniques to hide the message and execute it. There is no limit to the ways steganography can be used with such a wide range of technology available today. A few examples are:
 
 - Playing a video at a faster frame rate to unveil a hidden message.
 - Inserting a message in the red, green, or blue channel of an RGB image.
@@ -88,12 +75,4 @@ ____
 
 ## Steganography in Secure Spark
 
-> Generally, there is no encryption in Steganography but in Secure Spark we're going to use **2-way asymmetric encryption** to encrypt the plain text. Thereby ensuring in the case of third party interception there is no compromise in security
-
-![Image Steganography](/static/docs%20/images/Image%20Steganography.jpeg)
-
-_____
-
-## Conclusion
-
-> Unlike cryptography which obscures data so that it cannot be comprehended, steganography hides the fact that content exists by embedding it into something else. It is more of a concept and not a method of data delivery by clandestine methods making it easier to execute it in several ingenious ways.
+Generally, there is no encryption in Steganography but in Secure Spark we're going to use **2-way asymmetric encryption** to encrypt the plain text. Thereby ensuring in the case of third party interception there is no compromise in security
